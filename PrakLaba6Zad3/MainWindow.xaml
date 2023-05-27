@@ -1,0 +1,50 @@
+﻿<Window x:Class="PrakLaba6Zad3.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PrakLaba6Zad3"
+        mc:Ignorable="d"
+Title="метод f(x)" Height="500" Width="600" Background="Orange">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="50"/>
+            <RowDefinition Height="50"/>
+            <RowDefinition Height="50"/>
+            <RowDefinition Height="50"/>
+            <RowDefinition Height="50"/>
+            <RowDefinition Height="50"/>
+
+
+
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="155"/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+
+
+        <Label Content="радиус первого круга:" Margin="5, 5, 5, 5" Grid.Row="0" HorizontalAlignment="Center"/>
+        <TextBox x:Name="txt1" Grid.Column="1" Margin="8" Grid.Row="0"/>
+
+        <Label Content="радиус второго круга:" Margin="5, 5, 5, 5" Grid.Row="1" HorizontalAlignment="Center"/>
+        <TextBox x:Name="txt2" Grid.Column="1" Margin="8" Grid.Row="1"/>
+
+        <TextBox x:Name="txt3" Grid.Column="1" Margin="8" Grid.Row="2"/>
+        <Label Content="радиус третьего круга:" Margin="5, 5, 5, 5" Grid.Row="2" HorizontalAlignment="Center"/>
+
+        <TextBox x:Name="txt4" Grid.Column="1" Margin="8" Grid.Row="3"/>
+        <Label Content="Площадь первого круга::" Margin="5, 5, 5, 5" Grid.Row="3" HorizontalAlignment="Center"/>
+
+        <TextBox x:Name="txt5" Grid.Column="1" Margin="8" Grid.Row="4"/>
+        <Label Content="Площадь второго круга::" Margin="5, 5, 5, 5" Grid.Row="4" HorizontalAlignment="Center"/>
+
+        <TextBox x:Name="txt6" Grid.Column="1" Margin="8" Grid.Row="5"/>
+        <Label Content="Площадь третьего круга::" Margin="5, 5, 5, 5" Grid.Row="5" HorizontalAlignment="Center"/>
+
+
+
+        <Button Grid.Row="5" Content="Считать" Margin="28,61,28,-41" Click="Button_Click" Grid.Column="1"/>
+
+    </Grid>
+</Window>
